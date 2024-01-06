@@ -37,28 +37,16 @@ const handleCalculateAge = () => {
     gene.style.opacity = 1;
     if(+yearInput.value < 1945) {
       gene.innerText = "HEYY YOU'RE FROM THE SILENT GENERATION";
-      // gene.style.backgroundColor = "gray";
-      // gene.style.color = "white";
     } else if(+yearInput.value <= 1964 && +yearInput.value > 1945) {
       gene.innerText = "HEYY YOU'RE A BABY BOOMER"
-      // gene.style.backgroundColor = "hsl(259, 100%, 65%)";
-      // gene.style.color = "white";
     } else if(+yearInput.value <= 1980 && +yearInput.value > 1964) {
       gene.innerText = "HEYY THERE GOES A GEN X"
-      // gene.style.backgroundColor = "hsl(259, 100%, 65%)";
-      // gene.style.color = "white";
     }else if(+yearInput.value <= 1996 && +yearInput.value > 1980) {
       gene.innerText = "HEYY YOU'RE A MILLENNIALS"
-      // gene.style.backgroundColor = "hsl(0, 100%, 67%)";
-      // gene.style.color = "white";
     }else if(+yearInput.value <= 2012 && +yearInput.value > 1996) {
       gene.innerText = "HEYY YOU'RE A GEN Z (“Zoomers”)"
-      // gene.style.backgroundColor = "hsl(259, 100%, 65%)";
-      // gene.style.color = "white";
     } else {
       gene.innerText = "HEYY GEN ALPHA THE WORLD IS YOURS FOR THE TAKING!!!"
-      // gene.style.backgroundColor = "hsl(0, 1%, 44%)";
-      // gene.style.color = "hsl(0, 0%, 100%)";
     }
   } else {
     gene.style.opacity = 0
